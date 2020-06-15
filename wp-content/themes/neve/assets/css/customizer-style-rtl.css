@@ -1,8 +1,24 @@
 .control-wrap {width: 100%;}
 .has-media-queries .control-wrap {display: none;width: 100%;}
 .has-media-queries .control-wrap.active {display: block;}
-#sub-accordion-section-neve_typography_body, #sub-accordion-section-neve_typography_headings {min-height: 600px;}
-#customize-theme-controls .customize-pane-child.accordion-section-content#sub-accordion-section-neve_typography_headings, #customize-theme-controls .customize-pane-child.accordion-section-content#sub-accordion-section-neve_sidebar {overflow: initial;}
+.hfg--cb-conditional-header {display: flex;margin: 9px 0 0;float: right;}
+.hfg--cb-conditional-header.hidden {display: none;}
+.hfg--cb-conditional-header p {margin: 0;}
+.hfg--cb-conditional-header .dashicons {margin-left: 5px;}
+.hfg--cb-conditional-header a {cursor: pointer;}
+.nv-button-group {display: flex;flex-direction: row;justify-content: space-between;}
+.nv-button-group label.button {border-radius: 0;flex: 1 1 0;text-align: center;display: flex;align-items: center;justify-content: center;line-height: 1;height: 27px;opacity: .6;}
+.nv-button-group input {display: none;}
+.nv-button-group input:checked + label, .nv-button-group input:checked + label:hover {background: #fff;color: #13aff0;opacity: 1;}
+.nv-button-group label:first-of-type {border-left: none;border-bottom-right-radius: 3px;border-top-right-radius: 3px;}
+.nv-button-group label:last-of-type {border-right: none;border-bottom-left-radius: 3px;border-top-left-radius: 3px;}
+.nv-button-group-header {display: flex;align-items: center;position: relative;flex-wrap: wrap;}
+.nv-button-group-header i {margin-bottom: 4px;margin-right: 4px;cursor: pointer;}
+.nv-button-group-header i:hover {opacity: .75;}
+.nv-button-group-header input {display: none;}
+.nv-radio-description-info input {display: none;}
+.nv-radio-hidden-info {width: 100%;padding: 0 10px;border-radius: 5px;margin-bottom: 7px;max-height: 0;border: none;overflow: hidden;background-color: #fff;transition: all .3s ease;}
+.nv-button-group-header input:checked + .nv-radio-hidden-info {padding: 7px 10px;max-height: 200px;}
 .customize-control-checkbox-toggle .checkbox-toggle-wrap {flex-direction: row;padding: 7px 0;border: 1px solid #ccc;border-radius: 5px;-webkit-align-items: center;align-items: center;-webkit-box-align: center;-webkit-box-direction: normal;-webkit-box-orient: horizontal;-webkit-box-pack: justify;-ms-flex-align: center;-webkit-flex-direction: row;-ms-flex-direction: row;-ms-flex-pack: justify;-webkit-justify-content: space-between;justify-content: space-between;}
 .customize-control-checkbox-toggle span {display: inline-block;width: 65%;margin-right: 20px;font-weight: 600;}
 .customize-control-checkbox-toggle input[type=checkbox] {display: none;}
@@ -47,7 +63,7 @@
 .accordion-expand-button:before {display: block;position: relative;top: 1px;right: 1px;font-size: 16px;content: "";-webkit-transition: .1s ease-in-out;transition: .1s ease-in-out;}
 .customize-control-customizer-heading.accordion .neve-customizer-heading:hover .accordion-expand-button {color: #fff;background: #3ec8ff;}
 .accordion.expanded .accordion-expand-button:before {top: 0;-webkit-transform: rotate(-180deg);-ms-transform: rotate(-180deg);transform: rotate(-180deg);}
-.ti-order-sortable li {display: -ms-flexbox;display: -webkit-box;display: -webkit-flex;display: flex;position: relative;border: 1px dashed #ccc;opacity: .7;background: #fff;text-align: center;-webkit-align-items: center;align-items: center;-webkit-box-align: center;-webkit-box-pack: center;-ms-flex-align: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;}
+.ti-order-sortable li {display: -ms-flexbox;display: -webkit-box;display: -webkit-flex;display: flex;position: relative;border: 1px dashed #ccc;opacity: .7;background: #fff;text-align: center;-webkit-align-items: center;align-items: center;-webkit-box-align: center;-webkit-box-pack: center;-ms-flex-align: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;z-index: 1;}
 .ti-order-sortable li.enabled {border: 1px solid #666;opacity: 1;}
 .ti-order-sortable li p {width: 100%;margin: 0;padding: 7px 10px;}
 .ti-order-sortable li > * {display: inline;}
@@ -63,7 +79,6 @@
 .customize-control-radio-image .ui-buttonset {text-align: center;}
 .customize-control-radio-image label {display: inline-block;float: right;box-sizing: border-box;max-width: 33.3%;height: auto;padding: 3px;border-width: 0;border-radius: 0;color: inherit;background: none;box-shadow: none;font-size: inherit;line-height: inherit;vertical-align: inherit;white-space: nowrap;cursor: pointer;-webkit-appearance: none;}
 .customize-control-radio-image label:first-of-type {float: right;}
-.customize-control-radio-image label:nth-of-type(n + 3) {float: left;}
 .customize-control-radio-image label:hover {border-color: inherit;color: inherit;background: none;}
 .customize-control-radio-image label:active {border-color: inherit;background: none;box-shadow: none;-webkit-transform: none;-ms-transform: none;transform: none;}
 .customize-control-radio-image img {border: 1px solid transparent;}
@@ -74,6 +89,8 @@
 .customizer-tab:not(.customizer-subtab) label i {margin-left: 4px;color: #333;}
 .customizer-tab:not(.customizer-subtab) label.ui-state-active {color: #0085ba;background-color: #fff;box-shadow: inset 0 -3px 0 0 #0085ba;}
 .customizer-tab:not(.customizer-subtab) label:last-child {border: none;}
+.ui-buttonset .ui-helper-hidden-accessible {position: relative;}
+.customize-control-radio-image input[type=radio] {display: none;}
 .range-slider {display: -ms-flexbox;display: -webkit-box;display: -webkit-flex;display: flex;flex-direction: row;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;width: 100%;-webkit-align-items: center;align-items: center;-webkit-box-align: center;-webkit-box-direction: normal;-webkit-box-orient: horizontal;-webkit-box-pack: start;-ms-flex-align: center;-webkit-flex-direction: row;-ms-flex-direction: row;-ms-flex-pack: start;-webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap;-webkit-justify-content: flex-start;justify-content: flex-start;}
 .range-slider__range {width: 67%;height: 5px;padding: 0;border-radius: 5px;outline: none;background-color: rgba(0,0,0,.1);cursor: pointer;-webkit-transition: background .5s;transition: background .5s;-webkit-appearance: none;}
 .range-slider__range::-webkit-slider-thumb {width: 17px;height: 17px;border: 2px solid #2e86b9;border-radius: 15px;background-color: #fff;-webkit-appearance: none;}
@@ -103,6 +120,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {border: 0;}
 .responsive-number .controls--wrap {display: flex;align-items: center;}
 .customize-control .responsive-number.no-units input[type=number] {width: 95%;}
 .customize-control .responsive-number:not(.no-units) input[type=number] {width: 73%;}
+.customize-control .responsive-number input[type=number].no-units {width: 98%;}
 .responsive-number select {float: left;width: 23%;margin-right: 2%;}
 .responsive-number .control-wrap.active {display: flex;}
 .reset-number-input {display: inline-block;position: relative;width: 6%;margin-right: auto;color: rgba(0,0,0,.2);line-height: 1;text-align: center;cursor: pointer;transition: all .3s ease;}
@@ -117,3 +135,17 @@ input::-moz-focus-inner, input::-moz-focus-outer {border: 0;}
 .neve-tabs-control .neve-customizer-tab label:hover i {color: #333;}
 .neve-tabs-control .neve-customizer-tab.active label {color: #0085ba;background-color: #fff;box-shadow: inset 0 -3px 0 0 #0085ba;}
 .neve-tabs-control input[type="radio"] {display: none !important;}
+.nv-upsell {background: #fff;padding: 21px;border-radius: 3px;}
+.nv-upsell .upsell-pro-label {font-weight: bold;background: #a7a7a7;color: #fff;text-transform: uppercase;padding: 2px 7px 2px 6px;letter-spacing: .1px;font-size: 12px;border-radius: 3px;margin-left: 10px;}
+.nv-upsell-features li {line-height: 24px;margin-bottom: 23px;font-size: 14px;}
+.nv-upsell-features li:last-child {margin-bottom: 20px;}
+.nv-upsell-features.no-explained li {margin-bottom: 0;}
+.nv-upsell-features.no-explained li:last-child {margin-bottom: 0;}
+.nv-upsell .button {margin-left: 21px;width: 100%;text-align: center;letter-spacing: .2px;}
+.nv-upsell hr {margin-top: 22px;margin-bottom: 16px;}
+.nv-upsell-feature-list li:before {line-height: 37px;}
+.nv-upsell-feature-list li {line-height: 22px;font-size: 14px;font-style: italic;margin-bottom: 6px;}
+.nv-upsell-feature-list li:last-child {margin-bottom: 0;}
+.nv-upsell-content {margin-bottom: 10px;}
+#customize-controls #accordion-section-neve_upsells_section.control-section .accordion-section-title:hover {background-color: #0073aa;color: #fff;}
+#customize-controls #accordion-section-neve_upsells_section.control-section .accordion-section-title:hover:after {color: #fff;}

@@ -1,0 +1,20 @@
+[13/Jun/2020:03:48:21] (I): WordPress Instance Info:
+[13/Jun/2020:03:48:21] (I): Home URL : http://localhost:8080/wp-local
+[13/Jun/2020:03:48:21] (I): Site URL : http://localhost:8080/wp-local
+[13/Jun/2020:03:48:21] (I): WordPress Version : 5.4.2
+[13/Jun/2020:03:48:21] (I): Onboarding Version : 1.0.1
+[13/Jun/2020:03:48:21] (I): Multisite : No
+[13/Jun/2020:03:48:21] (I): Server Info : Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.1
+[13/Jun/2020:03:48:21] (I): PHP Version : 7.3.1
+[13/Jun/2020:03:48:21] (I): HTTPS : No
+[13/Jun/2020:03:48:21] (I): PHP Max Execution Time : 0
+[13/Jun/2020:03:48:21] (I): PHP Max Input Vars : 1000
+[13/Jun/2020:03:48:21] (I): Max Upload Size : 2097152
+[13/Jun/2020:03:48:21] (I): Plugins:
+[13/Jun/2020:03:48:21] (I): [PLUGIN] Akismet Anti-Spam : v4.1.6 (Automattic)
+[13/Jun/2020:03:48:21] (I): [PLUGIN] Backup : v1.3.5 (BackupGuard)
+[13/Jun/2020:03:48:21] (I): [PLUGIN] Elementor : v2.9.11 (Elementor.com)
+[13/Jun/2020:03:48:21] (I): [PLUGIN] GA Google Analytics : v20200325 (Jeff Starr)
+[13/Jun/2020:03:48:21] (I): [PLUGIN] Simply Static : v2.1.0 (Code of Conduct LLC)
+[13/Jun/2020:03:48:21] (I): [PLUGIN] WP2Static : v6.6.7 (Leon Stafford)
+[13/Jun/2020:03:48:21] (I): [PLUGIN] Orbit Fox Companion : v2.9.9 (Themeisle)
