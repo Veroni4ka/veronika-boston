@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	
+			
+		<title>How you can start building bots for healthcare – Veronika Dev</title>
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="../../../../../wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-5-css" href="../../../../../wp-content/plugins/themeisle-companion/obfx_modules/gutenberg-blocks/assets/fontawesome/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-4-shims-css" href="../../../../../wp-content/plugins/themeisle-companion/obfx_modules/gutenberg-blocks/assets/fontawesome/css/v4-shims.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="neve-style-css" href="../../../../../wp-content/themes/neve/style.min.css" type="text/css" media="all">
+<style id="neve-style-inline-css" type="text/css">
+.header-menu-sidebar-inner li.menu-item-nav-search { display: none; }
+ .container{ max-width: 748px; } .has-neve-button-color-color{ color: var(--nv-primary-accent)!important; } .has-neve-button-color-background-color{ background-color: var(--nv-primary-accent)!important; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:718px } .button.button-primary, button, input[type=button], .btn, input[type="submit"], /* Buttons in navigation */ ul[id^="nv-primary-navigation"] li.button.button-primary > a, .menu li.button.button-primary > a, .wp-block-button.is-style-primary .wp-block-button__link, .wc-block-grid .wp-block-button .wp-block-button__link{ background-color: var(--nv-primary-accent);color: #ffffff;border-radius:3px;border:none;border-width:1px 1px 1px 1px; } .button.button-primary:hover, ul[id^="nv-primary-navigation"] li.button.button-primary > a:hover, .menu li.button.button-primary > a:hover, .wp-block-button.is-style-primary .wp-block-button__link:hover, .wc-block-grid .wp-block-button .wp-block-button__link:hover{ background-color: var(--nv-primary-accent);color: #ffffff; } .button.button-secondary, #comments input[type="submit"], #comments input[type=submit], .cart-off-canvas .button.nv-close-cart-sidebar, .wp-block-button.is-style-secondary .wp-block-button__link{ color: var(--nv-text-color);border-radius:3px;border:1px solid;border-width:1px 1px 1px 1px; } .button.button-secondary:hover, #comments input[type="submit"]:hover, .cart-off-canvas .button.nv-close-cart-sidebar:hover, .wp-block-button.is-style-secondary .wp-block-button__link:hover{ color: var(--nv-text-color); } body, .site-title{ font-size: 16px; } .header-main-inner,.header-main-inner a:not(.button),.header-main-inner .navbar-toggle{ color: var(--nv-text-color); } .header-main-inner .nv-icon svg,.header-main-inner .nv-contact-list svg{ fill: var(--nv-text-color); } .header-main-inner .icon-bar{ background-color: var(--nv-text-color); } .hfg_header .header-main-inner .nav-ul .sub-menu{ background-color: var(--nv-site-bg); } .hfg_header .header-main-inner{ background-color: var(--nv-site-bg); } .header-menu-sidebar .header-menu-sidebar-bg,.header-menu-sidebar .header-menu-sidebar-bg a:not(.button),.header-menu-sidebar .header-menu-sidebar-bg .navbar-toggle{ color: var(--nv-text-color); } .header-menu-sidebar .header-menu-sidebar-bg .nv-icon svg,.header-menu-sidebar .header-menu-sidebar-bg .nv-contact-list svg{ fill: var(--nv-text-color); } .header-menu-sidebar .header-menu-sidebar-bg .icon-bar{ background-color: var(--nv-text-color); } .hfg_header .header-menu-sidebar .header-menu-sidebar-bg .nav-ul .sub-menu{ background-color: var(--nv-site-bg); } .hfg_header .header-menu-sidebar .header-menu-sidebar-bg{ background-color: var(--nv-site-bg); } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 120px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul .has-caret > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul .neve-mm-heading span,.builder-item--primary-menu .nav-menu-primary > .nav-ul .has-caret{ color: var(--nv-text-color); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a:after,.builder-item--primary-menu .nav-menu-primary > .nav-ul li > .has-caret > a:after{ background-color: var(--nv-secondary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item):hover > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret{ color: var(--nv-secondary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret svg{ fill: var(--nv-secondary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li.current-menu-item > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li.current_page_item > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li.current_page_item > .has-caret > a{ color: var(--nv-primary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li.current-menu-item > .has-caret svg{ fill: var(--nv-primary-accent); } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 500; text-transform: none; padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .footer-top-inner{ background-color: var(--nv-site-bg); } .footer-top-inner,.footer-top-inner a:not(.button),.footer-top-inner .navbar-toggle{ color: var(--nv-text-color); } .footer-top-inner .nv-icon svg,.footer-top-inner .nv-contact-list svg{ fill: var(--nv-text-color); } .footer-top-inner .icon-bar{ background-color: var(--nv-text-color); } .footer-top-inner .nav-ul .sub-menu{ background-color: var(--nv-site-bg); } .builder-item--footer-one-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .nav-menu-footer #footer-menu > li > a{ color: #6ec1e4; } #footer-menu > li > a:after{ background-color: #031fd8; } .nav-menu-footer:not(.style-full-height) #footer-menu > li:hover > a{ color: #031fd8; } .builder-item--footer-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li:hover > a:after{ width: calc(100% + 20px); } .builder-item--footer-menu .nav-ul a{ min-height: 25px; } .builder-item--footer-menu li > a{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 500; text-transform: none; } .builder-item--footer-menu li > a svg{ width: 1em;height: 1em; } .builder-item--footer-menu{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } @media(min-width: 576px){ .container{ max-width: 992px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:962px } body, .site-title{ font-size: 16px; } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 120px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .builder-item--footer-one-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li:hover > a:after{ width: calc(100% + 20px); } .builder-item--footer-menu .nav-ul a{ min-height: 25px; } .builder-item--footer-menu li > a{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } .builder-item--footer-menu li > a svg{ width: 1em;height: 1em; } .builder-item--footer-menu{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } }@media(min-width: 960px){ .container{ max-width: 1170px; } .neve-main > .single-post-container .nv-single-post-wrap.col{ max-width: 70%; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:789px } .container-fluid.single-post-container .alignfull > [class*="__inner-container"], .container-fluid.single-post-container .alignwide > [class*="__inner-container"]{ max-width:calc(70% + 15px) } .neve-main > .single-post-container .nv-sidebar-wrap{ max-width: 30%; } body, .site-title{ font-size: 15px; } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 120px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart) > a:after{ left:-10px;right:-10px } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .builder-item--footer-one-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li > a:after{ left:-10px;right:-10px } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li:hover > a:after{ width: calc(100% + 20px); } .builder-item--footer-menu .nav-ul a{ min-height: 25px; } .builder-item--footer-menu li > a{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } .builder-item--footer-menu li > a svg{ width: 1em;height: 1em; } .builder-item--footer-menu{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } }.nv-content-wrap .elementor a:not(.button):not(.wp-block-file__button){ text-decoration: none; }:root{--nv-primary-accent:#00a4f7;--nv-secondary-accent:#005bf7;--nv-site-bg:#ffffff;--nv-light-bg:#ededed;--nv-dark-bg:#14171c;--nv-text-color:#393939;--nv-text-dark-bg:#ffffff;--nv-c-1:#77b978;--nv-c-2:#f37262;--nv-fallback-ff:Arial, Helvetica, sans-serif;}
+:root{--e-global-color-nvprimaryaccent:#00a4f7;--e-global-color-nvsecondaryaccent:#005bf7;--e-global-color-nvsitebg:#;--e-global-color-nvlightbg:#ededed;--e-global-color-nvdarkbg:#14171c;--e-global-color-nvtextcolor:#393939;--e-global-color-nvtextdarkbg:#ffffff;--e-global-color-nvc1:#77b978;--e-global-color-nvc2:#f37262;}
+</style>
+<link rel="stylesheet" id="elementor-icons-css" href="../../../../../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-animations-css" href="../../../../../wp-content/plugins/elementor/assets/lib/animations/animations.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-legacy-css" href="../../../../../wp-content/plugins/elementor/assets/css/frontend-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="../../../../../wp-content/plugins/elementor/assets/css/frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-365-css" href="../../../../../wp-content/uploads/elementor/css/post-365.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-5-all-css" href="../../../../../wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-4-shim-css" href="../../../../../wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="../../../../../wp-content/uploads/elementor/css/global.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&ver=5.6" type="text/css" media="all">
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js" id="font-awesome-4-shim-js"></script>
+
+
+
+
+
+
+
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147071311-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-147071311-1');
+		</script>
+
+	<link rel="icon" href="../../../../../wp-content/uploads/2019/02/cropped-v-logo-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../../../wp-content/uploads/2019/02/cropped-v-logo-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../../../../../wp-content/uploads/2019/02/cropped-v-logo-180x180.png">
+<meta name="msapplication-TileImage" content="../../../../../wp-content/uploads/2019/02/cropped-v-logo-270x270.png">
+</head>
+
+<body class="post-template-default single single-post postid-473 single-format-standard wp-custom-logo nv-sidebar-full-width menu_sidebar_slide_left elementor-default elementor-kit-365 elementor-page elementor-page-473" id="neve_body">
+<div class="wrapper">
+		<header class="header" role="banner">
+		<a class="neve-skip-link show-on-focus" href="#content" tabindex="0">
+			Skip to content		</a>
+		<div id="header-grid" class="hfg_header site-header">
+	
+<nav class="header--row header-main hide-on-mobile hide-on-tablet layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="desktop">
+
+	<div class="header--row-inner header-main-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="builder-item hfg-item-first col-4 col-md-4 col-sm-4 desktop-left tablet-left mobile-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	<div class="site-logo">
+	<a class="brand" href="../../../../../index.html" title="Veronika Dev" aria-label="Veronika Dev"><img src="../../../../../wp-content/uploads/2019/01/cropped-image-1.png" alt=""></a></div>
+
+	</div>
+
+</div><div class="builder-item has-nav hfg-item-last col-8 col-md-8 col-sm-8 desktop-right tablet-left mobile-left"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+	<div class="nv-nav-wrap">
+	<div role="navigation" class="style-plain nav-menu-primary" aria-label="Primary Menu">
+
+		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul"><li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-39"><a href="../../../../../index.html">Home</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-38"><a href="../../../../../blog/index.html">Blog</a></li>
+<li id="menu-item-246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246"><a href="../../../../../speaking/index.html">Speaking</a></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</nav>
+
+
+<nav class="header--row header-main hide-on-desktop layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="mobile">
+
+	<div class="header--row-inner header-main-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="builder-item hfg-item-first col-8 col-md-8 col-sm-8 desktop-left tablet-left mobile-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	<div class="site-logo">
+	<a class="brand" href="../../../../../index.html" title="Veronika Dev" aria-label="Veronika Dev"><img src="../../../../../wp-content/uploads/2019/01/cropped-image-1.png" alt=""></a></div>
+
+	</div>
+
+</div><div class="builder-item hfg-item-last col-4 col-md-4 col-sm-4 desktop-right tablet-right mobile-right"><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
+	<div class="menu-mobile-toggle item-button navbar-toggle-wrapper">
+	<button class="navbar-toggle" aria-label="
+			Navigation Menu			">
+				<div class="bars">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</div>
+		<span class="screen-reader-text">Toggle Navigation</span>
+	</button>
+</div> 
+
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</nav>
+
+<div id="header-menu-sidebar" class="header-menu-sidebar menu-sidebar-panel slide_left">
+	<div id="header-menu-sidebar-bg" class="header-menu-sidebar-bg">
+		<div class="close-sidebar-panel navbar-toggle-wrapper">
+			<button class="navbar-toggle active" aria-label="
+				Navigation Menu				">
+				<div class="bars">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+				<span class="screen-reader-text">
+				Toggle Navigation					</span>
+			</button>
+		</div>
+		<div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner ">
+			<div class="builder-item has-nav hfg-item-last hfg-item-first col-12 col-md-12 col-sm-12 desktop-right tablet-left mobile-left"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+	<div class="nv-nav-wrap">
+	<div role="navigation" class="style-plain nav-menu-primary" aria-label="Primary Menu">
+
+		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-39"><a href="../../../../../index.html">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-38"><a href="../../../../../blog/index.html">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246"><a href="../../../../../speaking/index.html">Speaking</a></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>		</div>
+	</div>
+</div>
+<div class="header-menu-sidebar-overlay"></div>
+
+</div>
+	</header>
+		
+	<main id="content" class="neve-main" role="main">
+
+	<div class="container single-post-container">
+		<div class="row">
+						<article id="post-473" class="nv-single-post-wrap col post-473 post type-post status-publish format-standard hentry category-uncategorized">
+				<div class="entry-header"><div class="nv-title-meta-wrap"><h1 class="title entry-title ">How you can start building bots for healthcare</h1><ul class="nv-meta-list"><li class="meta author vcard"><span class="author-name fn">by <a href="../../../../../author/veronika/index.html" title="Posts by Veronika" rel="author">Veronika</a></span></li><li class="meta date posted-on"><time class="entry-date published" datetime="2021-01-20T03:09:56+00:00" content="2021-01-20">January 20, 2021</time><time class="updated" datetime="2021-01-20T03:13:18+00:00">January 20, 2021</time></li></ul></div></div><div class="nv-thumb-wrap"></div><div class="nv-content-wrap entry-content">		<div data-elementor-type="wp-post" data-elementor-id="473" class="elementor elementor-473" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-931ded7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="931ded7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7e3b3d2" data-id="7e3b3d2" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7547653 elementor-widget elementor-widget-text-editor" data-id="7547653" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Healthcare is always an essential part of every person’s life. Starting last year (2020), it became probably the main thing for many people (if not for everyone) due to the pandemic. As developers, we would want to help healthcare workers and patients as much as possible. How can we do it? I’m sure there’s more than one way, but today I want to talk about creating a healthcare bot. A bot can save lots of time for both patients and medical staff. For example, patients can figure out what doctor they need to see based on the symptoms and schedule an appointment right from the bot; also, medical personnel doesn’t have to ask same information again when they get it from a bot.</p><p>You might have heard there’re many different ways to create a bot. Only Microsoft offers several tools, like:</p><ul><li>Bot Framework SDK</li><li>Azure Web App Bot</li><li>Health Bot</li><li>Bot Composer</li><li>Power Virtual Agent</li></ul><p>Besides, there’s a full plethora of supporting tools, like Cognitive Services, custom ML (example: ML.NET), Bot Composer, Bot Framework Emulator, etc. I’m sure you can find something you like from that list.</p><p>I want to focus on the Health Bot. It’s a great option when you’re building a bot for healthcare specifically: in addition to all the benefits of Web App Bot, it also has pre-built healthcare-related templates and components, and it’s HIPAA compliant. I first read about it and tried that service a couple of years ago, but my attention was brought back to it just several days ago because of this big announcement: <a href="https://azure.microsoft.com/en-us/blog/introducing-azure-health-bot-an-evolution-of-microsoft-healthcare-bot-with-new-functionality/">https://azure.microsoft.com/en-us/blog/introducing-azure-health-bot-an-evolution-of-microsoft-healthcare-bot-with-new-functionality/</a>. In short, Microsoft Health Bot became Azure Health Bot. Let’s see what exactly changed and why it’s worth checking out.</p><p>Now it’s easier to create a health bot right from Azure, search for “Health Bot” and create a new resource. When the resource is created, you’ll see a link directing you to the health bot portal (inside the resource, go to the “Overview” section, and you’ll see the link under “Management portal”). The resource itself has all basic Azure resource options, like “Activity log” and “Properties”, so there’s not much to talk about there. I want to provide an overview of the management portal, though. First impression: it looks pretty sleek and similar to other popular Microsoft portals, like Azure AI and Bot Composer (it’s not an online portal, but still). The change is so recent that the documentation is a little behind, but the tool itself is quite intuitive.</p><p>The first screen you see in the portal is “Scenario Management”, there you’ll be able to import scenarios from templates or create entirely custom scenarios. When several scenarios have been created, they can be interconnected to form a more complex bot. Here’re some templates available for you to import(Scenarios -> Template catalog): </p><div id="attachment_475" style="width: 1034px" class="wp-caption aligncenter"><img loading="lazy" aria-describedby="caption-attachment-475" class="wp-image-475 size-large" src="../../../../../wp-content/uploads/2021/01/AzureHealthBot1-1024x587.png" alt="Azure Health Bot Templates" width="1024" height="587" srcset="../../../../../wp-content/uploads/2021/01/AzureHealthBot1-1024x587.png 1024w,../../../../../wp-content/uploads/2021/01/AzureHealthBot1-300x172.png 300w,../../../../../wp-content/uploads/2021/01/AzureHealthBot1-768x440.png 768w,../../../../../wp-content/uploads/2021/01/AzureHealthBot1-1536x880.png 1536w,../../../../../wp-content/uploads/2021/01/AzureHealthBot1.png 1990w" sizes="(max-width: 1024px) 100vw, 1024px"><p id="caption-attachment-475" class="wp-caption-text">Azure Health Bot COVID-19 Templates</p></div><div><div id="attachment_476" style="width: 1034px" class="wp-caption alignnone"><img loading="lazy" aria-describedby="caption-attachment-476" class="wp-image-476 size-large" src="../../../../../wp-content/uploads/2021/01/AzureHealthBot2-1024x518.png" alt="Azure Health Bot Templates" width="1024" height="518" srcset="../../../../../wp-content/uploads/2021/01/AzureHealthBot2-1024x518.png 1024w,../../../../../wp-content/uploads/2021/01/AzureHealthBot2-300x152.png 300w,../../../../../wp-content/uploads/2021/01/AzureHealthBot2-768x388.png 768w,../../../../../wp-content/uploads/2021/01/AzureHealthBot2-1536x777.png 1536w,../../../../../wp-content/uploads/2021/01/AzureHealthBot2.png 1938w" sizes="(max-width: 1024px) 100vw, 1024px"><p id="caption-attachment-476" class="wp-caption-text">Azure Health Bot Templates</p></div><p>Moving forward, we can see built-in language models and also a possibility to add new custom ones. New language models can be created using cognitive services: LUIS (Language Understanding Intelligent Service), QnA maker, or RegEx.</p><p>There’re also several options for add-ons and customization. I think calling an external skill is pretty cool. I know connecting skills, created with different tools, is getting more popular. For example, if you have several teams in your company working on different types of bots, they can all be connected if needed. Another interesting and useful customization is a data connection. When there’s an external API that has to be used for pulling data, it is beneficial to use the data connection option. It’s easy to create a new connection and secure it using authentication settings.</p><div id="attachment_477" style="width: 180px" class="wp-caption aligncenter"><img loading="lazy" aria-describedby="caption-attachment-477" class="size-medium wp-image-477" src="../../../../../wp-content/uploads/2021/01/AzureHealthBot3-170x300.png" alt="Azure Health Bot Menu" width="170" height="300" srcset="../../../../../wp-content/uploads/2021/01/AzureHealthBot3-170x300.png 170w,../../../../../wp-content/uploads/2021/01/AzureHealthBot3.png 520w" sizes="(max-width: 170px) 100vw, 170px"><p id="caption-attachment-477" class="wp-caption-text">Azure Health Bot Menu</p></div><p>Analytics is available right in the portal as well as in the Azure resource. I’ll never stop talking about the importance of logs and monitoring: it’s essential in ML as much as in mobile, web, or any other solution.</p><p>I feel like it’s easier to create and customize a healthcare bot through the portal now than it was before the update. It might take some time to figure out the portal structure and how different parts can be connected and used, but once to play with it for a little, create your first bot, you’ll become more comfortable with the tools. The lack of documentation takes its toll on this technology. Still, there’s always a way to get more information and advice from the community on StackOverflow and Microsoft Community websites. You can also reach out to the Azure support and directly to developers and program managers through social media and email.</p><div id="attachment_478" style="width: 1034px" class="wp-caption aligncenter"><img loading="lazy" aria-describedby="caption-attachment-478" class="wp-image-478 size-large" src="../../../../../wp-content/uploads/2021/01/AzureHealthBot4-1024x483.png" alt="Azure Health Bot Scenario Editor" width="1024" height="483" srcset="../../../../../wp-content/uploads/2021/01/AzureHealthBot4-1024x483.png 1024w,../../../../../wp-content/uploads/2021/01/AzureHealthBot4-300x142.png 300w,../../../../../wp-content/uploads/2021/01/AzureHealthBot4-768x362.png 768w,../../../../../wp-content/uploads/2021/01/AzureHealthBot4-1536x725.png 1536w,../../../../../wp-content/uploads/2021/01/AzureHealthBot4-2048x966.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px"><p id="caption-attachment-478" class="wp-caption-text">Azure Health Bot Scenario Editor</p></div><p>I remember the struggle when I created a health bot using a third party tool and connecting it to LUIS (which is just the best to use with other Microsoft tools and 3<sup>rd</sup> party tools) and the hospital network data API. It wasn’t easy, but the same project would be easier to accomplish with the Azure Healthcare bot. One of the possible downsides of using this tool is the cost. I wish I could calculate the price for an average-sized project, but it might be challenging. I recommend checking information about available pricing tiers and calculating average spending using this document: <a href="https://docs.microsoft.com/en-us/healthbot/resources/pricing-details">https://docs.microsoft.com/en-us/healthbot/resources/pricing-details</a>.</p><p>As I mentioned in the beginning, there’re many options for creating a healthcare bot, and you need to understand and weigh in all pros and cons for every approach related to a bot you’re about to create. Azure Healthcare bot looks impressive, and it can be the perfect tool for your project, but keep in mind its possible cons like documentation (which can be updated very soon) and price.</p></div></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		</div>
+<div id="comments" class="comments-area">
+	</div>
+			</article>
+					</div>
+	</div>
+</main>
+
+
+<footer class="site-footer" id="site-footer">
+	<div class="hfg_footer">
+		<div class="footer--row footer-top layout-fullwidth" id="cb-row--footer-top" data-row-id="top" data-show-on="desktop">
+	<div class="footer--row-inner footer-top-inner footer-content-wrap">
+		<div class="container">
+			<div class="hfg-grid nv-footer-content hfg-grid-top row--wrapper row " data-section="hfg_footer_layout_top">
+				<div class="builder-item hfg-item-first col-3 col-md-3 col-sm-3 desktop-left tablet-left mobile-left hfg-item-v-middle"><div class="item--inner builder-item--footer-one-widgets" data-section="sidebar-widgets-footer-one-widgets" data-item-id="footer-one-widgets">
+		<div class="widget-area">
+		<div id="custom_html-4" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="float:left;" class="elementor-social-icons-wrapper">
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-github" href="https://github.com/Veroni4ka" target="_blank" rel="noopener">
+					<span class="elementor-screen-only">Github</span>
+					<i class="fa fa-github"></i>
+				</a>
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter" href="https://twitter.com/veronika_dev1" target="_blank" rel="noopener">
+					<span class="elementor-screen-only">Twitter</span>
+					<i class="fa fa-twitter"></i>
+				</a>
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-envelope" href="mailto:veronika.boston16@gmail.com" target="_blank" rel="noopener">
+					<span class="elementor-screen-only">Email</span>
+					<i class="fa fa-envelope"></i>
+				</a>
+					</div>
+<style>
+	@media (max-width: 960px){
+.footer--row .builder-item
+	{
+		width: 50%;
+	  flex: 0 0 50% !important;
+	}
+}
+</style></div></div>	</div>
+	</div>
+
+</div><div class="builder-item hfg-item-last col-5 col-md-5 col-sm-5 desktop-right tablet-right mobile-right hfg-item-v-middle offset-4"><div class="item--inner builder-item--footer-menu has_menu" data-section="footer_menu_primary" data-item-id="footer-menu">
+	<div class="component-wrap">
+	<div role="navigation" class="style-plain nav-menu-footer" aria-label="Footer Menu">
+
+		<ul id="footer-menu" class="footer-menu nav-ul"><li id="menu-item-250" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-250"><a href="../../../../../blog/index.html">Blog</a></li>
+<li id="menu-item-249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a href="../../../../../speaking/index.html">Speaking</a></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+</footer>
+
+</div>
+<script type="text/javascript" id="neve-script-js-extra">
+/* <![CDATA[ */
+var NeveProperties = {"ajaxurl":"http:\/\/PLACEHOLDER.wpsho\/wp-admin\/admin-ajax.php","nonce":"edfe9515e4","isRTL":"","isCustomize":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../../../../wp-content/themes/neve/assets/js/build/modern/frontend.js" id="neve-script-js" async></script>
+<script type="text/javascript" src="../../../../../wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="../../../../../wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="../../../../../wp-includes/js/jquery/ui/core.min.js" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js" id="elementor-dialog-js"></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js" id="elementor-waypoints-js"></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js" id="swiper-js"></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js" id="share-link-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.16","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"http:\/\/PLACEHOLDER.wpsho\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":473,"title":"How%20you%20can%20start%20building%20bots%20for%20healthcare%20%E2%80%93%20Veronika%20Dev","excerpt":"","featuredImage":false}};
+</script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script>
+
+</body>
+
+</html>
