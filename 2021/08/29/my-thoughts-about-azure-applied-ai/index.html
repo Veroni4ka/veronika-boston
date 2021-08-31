@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	
+			
+		<title>My thoughts about Azure Applied AI – Veronika Dev</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="../../../../../wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="neve-style-css" href="../../../../../wp-content/themes/neve/style.min.css" type="text/css" media="all">
+<style id="neve-style-inline-css" type="text/css">
+.header-menu-sidebar-inner li.menu-item-nav-search { display: none; }
+ .container{ max-width: 748px; } .has-neve-button-color-color{ color: var(--nv-primary-accent)!important; } .has-neve-button-color-background-color{ background-color: var(--nv-primary-accent)!important; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:718px } .button.button-primary, button, input[type=button], .btn, input[type="submit"], /* Buttons in navigation */ ul[id^="nv-primary-navigation"] li.button.button-primary > a, .menu li.button.button-primary > a, .wp-block-button.is-style-primary .wp-block-button__link, .wc-block-grid .wp-block-button .wp-block-button__link{ background-color: var(--nv-primary-accent);color: #ffffff;border-radius:3px;border:none;border-width:1px 1px 1px 1px; } .button.button-primary:hover, ul[id^="nv-primary-navigation"] li.button.button-primary > a:hover, .menu li.button.button-primary > a:hover, .wp-block-button.is-style-primary .wp-block-button__link:hover, .wc-block-grid .wp-block-button .wp-block-button__link:hover{ background-color: var(--nv-primary-accent);color: #ffffff; } .button.button-secondary, #comments input[type="submit"], #comments input[type=submit], .cart-off-canvas .button.nv-close-cart-sidebar, .wp-block-button.is-style-secondary .wp-block-button__link{ color: var(--nv-text-color);border-radius:3px;border:1px solid;border-width:1px 1px 1px 1px; } .button.button-secondary:hover, #comments input[type="submit"]:hover, .cart-off-canvas .button.nv-close-cart-sidebar:hover, .wp-block-button.is-style-secondary .wp-block-button__link:hover{ color: var(--nv-text-color); } body, .site-title{ font-size: 16px; } .header-main-inner,.header-main-inner a:not(.button),.header-main-inner .navbar-toggle{ color: var(--nv-text-color); } .header-main-inner .nv-icon svg,.header-main-inner .nv-contact-list svg{ fill: var(--nv-text-color); } .header-main-inner .icon-bar{ background-color: var(--nv-text-color); } .hfg_header .header-main-inner .nav-ul .sub-menu{ background-color: var(--nv-site-bg); } .hfg_header .header-main-inner{ background-color: var(--nv-site-bg); } .header-menu-sidebar .header-menu-sidebar-bg,.header-menu-sidebar .header-menu-sidebar-bg a:not(.button),.header-menu-sidebar .header-menu-sidebar-bg .navbar-toggle{ color: var(--nv-text-color); } .header-menu-sidebar .header-menu-sidebar-bg .nv-icon svg,.header-menu-sidebar .header-menu-sidebar-bg .nv-contact-list svg{ fill: var(--nv-text-color); } .header-menu-sidebar .header-menu-sidebar-bg .icon-bar{ background-color: var(--nv-text-color); } .hfg_header .header-menu-sidebar .header-menu-sidebar-bg .nav-ul .sub-menu{ background-color: var(--nv-site-bg); } .hfg_header .header-menu-sidebar .header-menu-sidebar-bg{ background-color: var(--nv-site-bg); } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 120px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul .has-caret > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul .neve-mm-heading span,.builder-item--primary-menu .nav-menu-primary > .nav-ul .has-caret{ color: var(--nv-text-color); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a:after,.builder-item--primary-menu .nav-menu-primary > .nav-ul li > .has-caret > a:after{ background-color: var(--nv-secondary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item):hover > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret{ color: var(--nv-secondary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret svg{ fill: var(--nv-secondary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li.current-menu-item > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li.current_page_item > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li.current_page_item > .has-caret > a{ color: var(--nv-primary-accent); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li.current-menu-item > .has-caret svg{ fill: var(--nv-primary-accent); } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 500; text-transform: none; padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .footer-top-inner{ background-color: var(--nv-site-bg); } .footer-top-inner,.footer-top-inner a:not(.button),.footer-top-inner .navbar-toggle{ color: var(--nv-text-color); } .footer-top-inner .nv-icon svg,.footer-top-inner .nv-contact-list svg{ fill: var(--nv-text-color); } .footer-top-inner .icon-bar{ background-color: var(--nv-text-color); } .footer-top-inner .nav-ul .sub-menu{ background-color: var(--nv-site-bg); } .builder-item--footer-one-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .nav-menu-footer #footer-menu > li > a{ color: #6ec1e4; } #footer-menu > li > a:after{ background-color: #031fd8; } .nav-menu-footer:not(.style-full-height) #footer-menu > li:hover > a{ color: #031fd8; } .builder-item--footer-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li:hover > a:after{ width: calc(100% + 20px); } .builder-item--footer-menu .nav-ul a{ min-height: 25px; } .builder-item--footer-menu li > a{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 500; text-transform: none; } .builder-item--footer-menu li > a svg{ width: 1em;height: 1em; } .builder-item--footer-menu{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } @media(min-width: 576px){ .container{ max-width: 992px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:962px } body, .site-title{ font-size: 16px; } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 120px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .builder-item--footer-one-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li:hover > a:after{ width: calc(100% + 20px); } .builder-item--footer-menu .nav-ul a{ min-height: 25px; } .builder-item--footer-menu li > a{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } .builder-item--footer-menu li > a svg{ width: 1em;height: 1em; } .builder-item--footer-menu{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } }@media(min-width: 960px){ .container{ max-width: 1170px; } .neve-main > .single-post-container .nv-single-post-wrap.col{ max-width: 70%; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:789px } .container-fluid.single-post-container .alignfull > [class*="__inner-container"], .container-fluid.single-post-container .alignwide > [class*="__inner-container"]{ max-width:calc(70% + 15px) } .neve-main > .single-post-container .nv-sidebar-wrap{ max-width: 30%; } body, .site-title{ font-size: 15px; } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 120px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart) > a:after{ left:-10px;right:-10px } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .builder-item--footer-one-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li > a:after{ left:-10px;right:-10px } .builder-item--footer-menu .style-full-height .nav-ul#footer-menu > li:hover > a:after{ width: calc(100% + 20px); } .builder-item--footer-menu .nav-ul a{ min-height: 25px; } .builder-item--footer-menu li > a{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } .builder-item--footer-menu li > a svg{ width: 1em;height: 1em; } .builder-item--footer-menu{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } }.nv-content-wrap .elementor a:not(.button):not(.wp-block-file__button){ text-decoration: none; }:root{--nv-primary-accent:#00a4f7;--nv-secondary-accent:#005bf7;--nv-site-bg:#ffffff;--nv-light-bg:#ededed;--nv-dark-bg:#14171c;--nv-text-color:#393939;--nv-text-dark-bg:#ffffff;--nv-c-1:#77b978;--nv-c-2:#f37262;--nv-fallback-ff:Arial, Helvetica, sans-serif;}
+:root{--e-global-color-nvprimaryaccent:#00a4f7;--e-global-color-nvsecondaryaccent:#005bf7;--e-global-color-nvsitebg:#;--e-global-color-nvlightbg:#ededed;--e-global-color-nvdarkbg:#14171c;--e-global-color-nvtextcolor:#393939;--e-global-color-nvtextdarkbg:#ffffff;--e-global-color-nvc1:#77b978;--e-global-color-nvc2:#f37262;}
+</style>
+<link rel="stylesheet" id="elementor-icons-css" href="../../../../../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-legacy-css" href="../../../../../wp-content/plugins/elementor/assets/css/frontend-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="../../../../../wp-content/plugins/elementor/assets/css/frontend.min.css" type="text/css" media="all">
+<style id="elementor-frontend-inline-css" type="text/css">
+@font-face{font-family:eicons;src:url(http://OFFLINEZIP.wpsho/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(http://OFFLINEZIP.wpsho/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(http://OFFLINEZIP.wpsho/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(http://OFFLINEZIP.wpsho/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(http://OFFLINEZIP.wpsho/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(http://OFFLINEZIP.wpsho/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style>
+<link rel="stylesheet" id="elementor-post-365-css" href="../../../../../wp-content/uploads/elementor/css/post-365.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-5-all-css" href="../../../../../wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-4-shim-css" href="../../../../../wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="../../../../../wp-content/uploads/elementor/css/global.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=5.8" type="text/css" media="all">
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js" id="font-awesome-4-shim-js"></script>
+
+
+
+
+
+
+
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147071311-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-147071311-1');
+		</script>
+
+	<link rel="icon" href="../../../../../wp-content/uploads/2019/02/cropped-v-logo-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../../../wp-content/uploads/2019/02/cropped-v-logo-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../../../../../wp-content/uploads/2019/02/cropped-v-logo-180x180.png">
+<meta name="msapplication-TileImage" content="../../../../../wp-content/uploads/2019/02/cropped-v-logo-270x270.png">
+</head>
+
+<body class="post-template-default single single-post postid-505 single-format-standard wp-custom-logo nv-sidebar-full-width menu_sidebar_slide_left elementor-default elementor-kit-365 elementor-page elementor-page-505" id="neve_body">
+<div class="wrapper">
+		<header class="header" role="banner">
+		<a class="neve-skip-link show-on-focus" href="#content" tabindex="0">
+			Skip to content		</a>
+		<div id="header-grid" class="hfg_header site-header">
+	
+<nav class="header--row header-main hide-on-mobile hide-on-tablet layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="desktop">
+
+	<div class="header--row-inner header-main-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="builder-item hfg-item-first col-4 col-md-4 col-sm-4 desktop-left tablet-left mobile-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	<div class="site-logo">
+	<a class="brand" href="../../../../../index.html" title="Veronika Dev" aria-label="Veronika Dev"><img src="../../../../../wp-content/uploads/2019/01/cropped-image-1.png" alt=""></a></div>
+
+	</div>
+
+</div><div class="builder-item has-nav hfg-item-last col-8 col-md-8 col-sm-8 desktop-right tablet-left mobile-left"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+	<div class="nv-nav-wrap">
+	<div role="navigation" class="style-plain nav-menu-primary" aria-label="Primary Menu">
+
+		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul"><li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-39"><a href="../../../../../index.html">Home</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-38"><a href="../../../../../blog/index.html">Blog</a></li>
+<li id="menu-item-246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246"><a href="../../../../../speaking/index.html">Speaking</a></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</nav>
+
+
+<nav class="header--row header-main hide-on-desktop layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="mobile">
+
+	<div class="header--row-inner header-main-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="builder-item hfg-item-first col-8 col-md-8 col-sm-8 desktop-left tablet-left mobile-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	<div class="site-logo">
+	<a class="brand" href="../../../../../index.html" title="Veronika Dev" aria-label="Veronika Dev"><img src="../../../../../wp-content/uploads/2019/01/cropped-image-1.png" alt=""></a></div>
+
+	</div>
+
+</div><div class="builder-item hfg-item-last col-4 col-md-4 col-sm-4 desktop-right tablet-right mobile-right"><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
+	<div class="menu-mobile-toggle item-button navbar-toggle-wrapper">
+	<button class="navbar-toggle" aria-label="
+			Navigation Menu			">
+				<div class="bars">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</div>
+		<span class="screen-reader-text">Toggle Navigation</span>
+	</button>
+</div> 
+
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</nav>
+
+<div id="header-menu-sidebar" class="header-menu-sidebar menu-sidebar-panel slide_left">
+	<div id="header-menu-sidebar-bg" class="header-menu-sidebar-bg">
+		<div class="close-sidebar-panel navbar-toggle-wrapper">
+			<button class="navbar-toggle active" aria-label="
+				Navigation Menu				">
+				<div class="bars">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+				<span class="screen-reader-text">
+				Toggle Navigation					</span>
+			</button>
+		</div>
+		<div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner ">
+			<div class="builder-item has-nav hfg-item-last hfg-item-first col-12 col-md-12 col-sm-12 desktop-right tablet-left mobile-left"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+	<div class="nv-nav-wrap">
+	<div role="navigation" class="style-plain nav-menu-primary" aria-label="Primary Menu">
+
+		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-39"><a href="../../../../../index.html">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-38"><a href="../../../../../blog/index.html">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246"><a href="../../../../../speaking/index.html">Speaking</a></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>		</div>
+	</div>
+</div>
+<div class="header-menu-sidebar-overlay"></div>
+
+</div>
+	</header>
+		
+	<main id="content" class="neve-main" role="main">
+
+	<div class="container single-post-container">
+		<div class="row">
+						<article id="post-505" class="nv-single-post-wrap col post-505 post type-post status-publish format-standard hentry category-uncategorized">
+				<div class="entry-header"><div class="nv-title-meta-wrap"><h1 class="title entry-title ">My thoughts about Azure Applied AI</h1><ul class="nv-meta-list"><li class="meta author vcard"><span class="author-name fn">by <a href="../../../../../author/veronika/index.html" title="Posts by Veronika" rel="author">Veronika</a></span></li><li class="meta date posted-on"><time class="entry-date published" datetime="2021-08-29T02:52:25+00:00" content="2021-08-29">August 29, 2021</time><time class="updated" datetime="2021-08-29T02:56:18+00:00">August 29, 2021</time></li></ul></div></div><div class="nv-content-wrap entry-content">		<div data-elementor-type="wp-post" data-elementor-id="505" class="elementor elementor-505" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-b1724fb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b1724fb" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a462b88" data-id="a462b88" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b9e00f5 elementor-widget elementor-widget-text-editor" data-id="b9e00f5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p style="text-align: left;">A couple of months ago, during Build 2021, Microsoft introduced Azure Applied AI (<a href="https://www.youtube.com/watch?v=45we8bNPsBc">https://www.youtube.com/watch?v=45we8bNPsBc</a>). Since then, I got many questions about them and had a chance to read about them and play with some of them myself. That’s one of the reasons I decided to write that blog post. Another reason is to keep my initial impression written down, so I can go back to it later and check if my perspective changes.</p><p>What are those Azure Applied AI services? They are sets of cognitive services combined to cover specific business scenarios. If you use one of the Applied AI services, you don’t need to create several Cognitive Service resources in Azure and write more code to make them work for your specific task. There’re currently six scenarios/Applied AI services: Bot Service, Form Recognizer, Cognitive Search, Metrics Advisor, Video Analyzer, Immersive Reader. Almost all of them were in some way a part of Cognitive Services, and then they just became too big to continue being in line with others. I noticed that most of the services with their own UI (not just an Azure resource, but its own portal) moved to the Applied AI group. Only Custom Vision and Language Understanding Intelligent Service are still under the Cognitive Services, which makes sense because they are relatively small, independent, and cover specific tasks rather than the whole scenario.</p><p style="text-align: center;"><img loading="lazy" class="wp-image-508 size-large aligncenter" src="../../../../../wp-content/uploads/2021/08/AppliedAI2-1024x448.png" alt="Applied AI Services" width="1024" height="448" srcset="../../../../../wp-content/uploads/2021/08/AppliedAI2-1024x448.png 1024w,../../../../../wp-content/uploads/2021/08/AppliedAI2-300x131.png 300w,../../../../../wp-content/uploads/2021/08/AppliedAI2-768x336.png 768w,../../../../../wp-content/uploads/2021/08/AppliedAI2-1536x673.png 1536w,../../../../../wp-content/uploads/2021/08/AppliedAI2-2048x897.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px"> Applied AI Services</p><div><br><p>You can recreate yourself using available cognitive services and some custom code for five out of six services I mentioned above. The Bot Service was the only one that was never a part of the Cognitive Services and was represented mainly by different combinations of Web App Bot, LUIS, and QnA maker Azure resources. Also, that service doesn’t have a separate portal; instead, it has the whole app you can install on Windows, Mac, and Linux – Bot Framework Composer (<a href="https://docs.microsoft.com/en-us/composer/">https://docs.microsoft.com/en-us/composer/</a>). Azure Bot resource now can be automatically opened in the Composer too.</p><p>I still remember the whole big Search group in the Cognitive Services suite; it contained all kinds of searches: news, image, text, etc. Now the Cognitive Search from the Applied AI suit can perform all those searches plus auto-complete, geospatial search, OCR, and entity recognition. That makes it way less confusing and more convenient to use for all-purpose searches.</p><p>The Video Analyzer service came from a combination of Computer Vision and Video Indexer Cognitive Services, containers, and other Azure resources. This Applied AI service is similar to the Video Indexer but has more capabilities. I found an article written a couple of years ago describing a custom solution for video analysis using the Computer Vision service; <a href="https://www.cloudiqtech.com/real-time-video-analysis-using-microsoft-cognitive-services/">https://www.cloudiqtech.com/real-time-video-analysis-using-microsoft-cognitive-services/</a>. Now you need to connect your IoT-enabled device with the Video Analyzer service, which is way more convenient.</p><p>Another former Cognitive Service and now Applied AI service is Azure Form Recognizer. Form Recognizer was relatively straightforward: you train your model using the console and retrieve data from forms. The primary way of interaction with the service was through REST API. New Form Recognizer has the whole portal build on top of that API: <a href="https://fott-2-1.azurewebsites.net/prebuilts-analyze">https://fott-2-1.azurewebsites.net/prebuilts-analyze</a> (the URL is from the official documentation). Using the portal, you can:</p><ul><li>use a pre-build model to work with images of forms: invoice, receipt, business cards, or ID</li><li>use the Layout functionality to extract tables, text, structure elements of the document</li><li>use the Custom functionality to train the model on your specific forms to retrieve key-value pairs from your business-specific documents</li></ul><p>It can be a helpful service for financial and HR tasks for scanning and analyzing receipts and legal documents. But it also can be used for other tasks where scanned or photographed forms are used.</p><p>The Immersive Reader was also introduced and became generally available under the Cognitive Services umbrella. Unfortunately, I never had a chance to work with it, but I saw the demo portal/website, where the service was used for reading the text out loud and helping understand some language nuances. Last year Microsoft provided a list of companies that used the Immersive Reader service, so it can be interesting to know for reference: <a href="https://azure.microsoft.com/en-us/blog/empowering-remote-learning-with-azure-cognitive-services/">https://azure.microsoft.com/en-us/blog/empowering-remote-learning-with-azure-cognitive-services/</a>. Immersive Reader is great when used in solutions for teaching kids, helping people with dyslexia (and similar disorders), and learning languages. There’s no portal for that service, but you can always access Immersive Reader through REST API and SDK. If you want to see how it works, there’s an option to try it here: <a href="https://azure.microsoft.com/en-gb/services/immersive-reader/#overview">https://azure.microsoft.com/en-gb/services/immersive-reader/#overview</a> (closer to the middle of the page). I don’t see it widely used right now, but I can see how useful it might be for some language-focused scenarios.</p><p>The last Applied AI service is Azure Metrics Advisor. And, as you, probably guessed it used to be a Cognitive Service too. The initial Metrics Advisor introduction from Seth Juarez can be found here: <a href="https://channel9.msdn.com/Shows/AI-Show/Introducing-Metrics-Advisor">https://channel9.msdn.com/Shows/AI-Show/Introducing-Metrics-Advisor</a>. That service became way too big comparing to other Decision services and consists of several parts. It also has its own portal, where you can connect it to your Azure resource and data sources, see the graphs and analytics, perform a root cause analysis of anomalies, analyze multi-dimensional data from multiple data sources and even add hooks for notifications or kicking automated process. To use the portal, you need to create the Azure resource first, and then it can be connected here: <a href="https://metricsadvisor.azurewebsites.net/">https://metricsadvisor.azurewebsites.net/</a>. I think that service can be helpful not only for developers integrating it with their solutions. It also can be used as a low code solution to monitor anomalies and analyze data. I think IoT solutions will be the ideal client for this service.</p><p>That was a quick overview of the new Applied AI group of tools provided by Microsoft. In the Microsoft AI solutions hierarchy, the Applied AI group is located between Power Platform low code/no-code options and the Cognitive Services. Here’s a visual for that:</p><p style="text-align: center;"><img loading="lazy" class="wp-image-507 size-medium aligncenter" src="../../../../../wp-content/uploads/2021/08/AppliedAI-300x112.png" alt="Hierarchy" width="300" height="112" srcset="../../../../../wp-content/uploads/2021/08/AppliedAI-300x112.png 300w,../../../../../wp-content/uploads/2021/08/AppliedAI-1024x384.png 1024w,../../../../../wp-content/uploads/2021/08/AppliedAI-768x288.png 768w,../../../../../wp-content/uploads/2021/08/AppliedAI-1536x576.png 1536w,../../../../../wp-content/uploads/2021/08/AppliedAI-2048x768.png 2048w" sizes="(max-width: 300px) 100vw, 300px"> <br>Applied AI in the hierarchy of the Microsoft AI tools</p><div><p> </p><p>Tools from those categories can be used individually or mixed with the ones from other groups. A mix-and-match approach is always a good idea for more extensive/ complex solutions and mixed teams, where not everyone can or wants to write code.</p><p>Overall I’m thrilled with the way Microsoft is making AI accessible for everyone: developers, managers, data scientists, etc. I also see that moving services around and renaming them can bring a lot of confusion. It makes sense to separate scenario-focused tools from task-focused ones. However, I hope Cognitive Services won’t migrate entirely, and we will all still have access to more lightweight options. As always: the more opportunities we have, the better.</p></div></div>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		</div>
+<div id="comments" class="comments-area">
+	</div>
+			</article>
+					</div>
+	</div>
+</main>
+
+
+<footer class="site-footer" id="site-footer">
+	<div class="hfg_footer">
+		<div class="footer--row footer-top layout-fullwidth" id="cb-row--footer-top" data-row-id="top" data-show-on="desktop">
+	<div class="footer--row-inner footer-top-inner footer-content-wrap">
+		<div class="container">
+			<div class="hfg-grid nv-footer-content hfg-grid-top row--wrapper row " data-section="hfg_footer_layout_top">
+				<div class="builder-item hfg-item-first col-3 col-md-3 col-sm-3 desktop-left tablet-left mobile-left hfg-item-v-middle"><div class="item--inner builder-item--footer-one-widgets" data-section="sidebar-widgets-footer-one-widgets" data-item-id="footer-one-widgets">
+		<div class="widget-area">
+		<div id="custom_html-4" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="float:left;" class="elementor-social-icons-wrapper">
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-github" href="https://github.com/Veroni4ka" target="_blank" rel="noopener">
+					<span class="elementor-screen-only">Github</span>
+					<i class="fa fa-github"></i>
+				</a>
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter" href="https://twitter.com/veronika_dev1" target="_blank" rel="noopener">
+					<span class="elementor-screen-only">Twitter</span>
+					<i class="fa fa-twitter"></i>
+				</a>
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-envelope" href="mailto:veronika.boston16@gmail.com" target="_blank" rel="noopener">
+					<span class="elementor-screen-only">Email</span>
+					<i class="fa fa-envelope"></i>
+				</a>
+					</div>
+<style>
+	@media (max-width: 960px){
+.footer--row .builder-item
+	{
+		width: 50%;
+	  flex: 0 0 50% !important;
+	}
+}
+</style></div></div>	</div>
+	</div>
+
+</div><div class="builder-item hfg-item-last col-5 col-md-5 col-sm-5 desktop-right tablet-right mobile-right hfg-item-v-middle offset-4"><div class="item--inner builder-item--footer-menu has_menu" data-section="footer_menu_primary" data-item-id="footer-menu">
+	<div class="component-wrap">
+	<div role="navigation" class="style-plain nav-menu-footer" aria-label="Footer Menu">
+
+		<ul id="footer-menu" class="footer-menu nav-ul"><li id="menu-item-250" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-250"><a href="../../../../../blog/index.html">Blog</a></li>
+<li id="menu-item-249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a href="../../../../../speaking/index.html">Speaking</a></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>							</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+</footer>
+
+</div>
+<link rel="stylesheet" id="e-animations-css" href="../../../../../wp-content/plugins/elementor/assets/lib/animations/animations.min.css" type="text/css" media="all">
+<script type="text/javascript" id="neve-script-js-extra">
+/* <![CDATA[ */
+var NeveProperties = {"ajaxurl":"http:\/\/OFFLINEZIP.wpshowp-admin\/admin-ajax.php","nonce":"c2be520e10","isRTL":"","isCustomize":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../../../../wp-content/themes/neve/assets/js/build/modern/frontend.js" id="neve-script-js" async></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="../../../../../wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="../../../../../wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js" id="elementor-waypoints-js"></script>
+<script type="text/javascript" src="../../../../../wp-includes/js/jquery/ui/core.min.js" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js" id="swiper-js"></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js" id="share-link-js"></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js" id="elementor-dialog-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.2","is_static":false,"experimentalFeatures":{"e_import_export":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"http:\/\/OFFLINEZIP.wpshowp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":505,"title":"My%20thoughts%20about%20Azure%20Applied%20AI%20%E2%80%93%20Veronika%20Dev","excerpt":"","featuredImage":false}};
+</script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script>
+<script type="text/javascript" src="../../../../../wp-content/plugins/elementor/assets/js/preloaded-modules.min.js" id="preloaded-modules-js"></script>
+
+</body>
+
+</html>
